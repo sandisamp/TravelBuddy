@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/road"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1">
+
+
+        <Button
+            android:text="Your Expenses"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/towallet_butt"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:text="To map"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tomap_butt"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:text="Search Hotels"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotels"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+</RelativeLayout>

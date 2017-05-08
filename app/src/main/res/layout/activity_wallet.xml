@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ewallet"
+    >
+
+    <TextView
+        android:text="TOAL EXPENSES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textview_budget"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:background="@color/main_back"
+        android:id="@+id/budget"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Add Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_wall"
+        android:layout_below="@+id/budget"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/budget"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Remove Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_wall"
+        android:layout_marginTop="18dp"
+        android:id="@+id/remove_expense"
+        android:layout_alignStart="@+id/set_wall"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/info"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:layout_below="@+id/remove_expense"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark"
+        android:layout_alignEnd="@+id/textview_budget" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:id="@+id/prices"
+        android:layout_below="@+id/remove_expense"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/remove_expense" />
+
+</RelativeLayout>
